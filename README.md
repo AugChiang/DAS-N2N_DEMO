@@ -4,7 +4,6 @@ The model is finetuned from [https://github.com/sachalapins/DAS-N2N](https://git
 
 Our data is recorded in Taichung Powe Plant and is used to finetune the DAS-N2N model for denoising.
 
-<<<<<<< HEAD:README.md
 ## Environment
 - platform: Win11 x64
 - python: 3.9.19
@@ -13,9 +12,6 @@ Our data is recorded in Taichung Powe Plant and is used to finetune the DAS-N2N 
 To create environment using Anaconda: $ conda env create -f <environment.yml>
 
 ## Data
-=======
-## Data ##
->>>>>>> f41e178683d29af995d8cb46178fd820e3be8a23:README
 - date: 2023.11.21
 - shape: (30000,2132) along temporal and spatial axis. While DAS-N2N model accepts the input shape of (128,96), therefore, we slice ours into a block of the shape (2585, 128, 96).
 
