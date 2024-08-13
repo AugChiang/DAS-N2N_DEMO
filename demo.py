@@ -77,16 +77,16 @@ def plot_gaussian_test_input(noised_test_input, testnormal, pred, g_pred, saveAs
     plt.show()
 
 def plot_compare(x1,x2,y1,y2, raw, pred1, pred2, saveAs="fig/comparison.png"):
-    fig, ax = plt.subplots(nrows=1, ncols=3, sharey=True, figsize=(12,4))
+    fig, ax = plt.subplots(nrows=1, ncols=3, sharey=True, figsize=(14,4))
     # Define the extent to fit your array
     extent = (0, raw.shape[1], 0, raw.shape[0])
 
     # Display the image
     ax[0].set_title("Raw Data")
     ax[0].imshow(raw  , extent=extent, origin='lower', cmap='seismic', vmin=-1, vmax=1, aspect='auto')
-    ax[0].set_title("Pred")
+    ax[1].set_title("Pred")
     ax[1].imshow(pred1, extent=extent, origin='lower', cmap='seismic', vmin=-1, vmax=1, aspect='auto')
-    ax[0].set_title("Pred (Tuned)")
+    ax[2].set_title("Pred (Tuned)")
     ax[2].imshow(pred2, extent=extent, origin='lower', cmap='seismic', vmin=-1, vmax=1, aspect='auto')
 
     # Create inset axis

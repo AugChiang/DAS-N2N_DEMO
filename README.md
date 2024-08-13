@@ -4,6 +4,13 @@ The model is finetuned from ![https://github.com/sachalapins/DAS-N2N](https://gi
 
 Our data is recorded in Taichung Powe Plant and is used to finetune the DAS-N2N model for denoising.
 
+## Environment
+- platform: Win11 x64
+- python: 3.9.19
+- tensorflow: 2.15.0
+
+To create environment using Anaconda: $ conda env create -f <environment.yml>
+
 ## Data
 - date: 2023.11.21
 - shape: (30000,2132) along temporal and spatial axis. While DAS-N2N model accepts the input shape of (128,96), therefore, we slice ours into a block of the shape (2585, 128, 96).
@@ -12,3 +19,6 @@ Our data is recorded in Taichung Powe Plant and is used to finetune the DAS-N2N 
 Following the training process of the original paper, the only pre-processing step applied is the z-score normalization. 
 We finetuned the whole DAS-N2N model with 31 records of our DAS data, iterating for 1 epoch. 
 
+## Demo
+- jupyter notebook: select the environment that just import and run the cells in `demo.ipynb`
+- command line: simply run the `demo.py`: $ python demo.py and it should do the work. (Figures are saved in `./fig/`)
