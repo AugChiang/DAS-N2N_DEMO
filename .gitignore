@@ -1,0 +1,4 @@
+*.[oa]
+test_data/*.npy
+fig/*.png
+__pycache__/
