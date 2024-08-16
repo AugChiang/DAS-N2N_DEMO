@@ -1,11 +1,12 @@
 # The Demo of DAS-N2N Denoising Model #
 
-The model is finetuned from [https://github.com/sachalapins/DAS-N2N](https://github.com/sachalapins/DAS-N2N) which is originally trained with **Rutford Ice Stream** in **Antarctica**. [paper link](https://arxiv.org/pdf/2304.08120)
+The model is finetuned from [https://github.com/sachalapins/DAS-N2N](https://github.com/sachalapins/DAS-N2N) which is originally trained with **Rutford Ice Stream** in **Antarctica** [(paper link).](https://arxiv.org/pdf/2304.08120)
+
 Our data is recorded in Taichung Powe Plant and is used to finetune the DAS-N2N model for denoising.
 This repo is used only for demo, not providing the finetuning process.
 
 ## Environment
-- platform: Win11 x64
+- platform: Windows-11 x64
 - python: 3.9.19
 - tensorflow: 2.15.0
 
@@ -33,5 +34,5 @@ The original DAS-N2N model (weights) is stored in `./weights/dasn2n_model` and i
 While the `TunedModel.h5` in `./weights/` is the model (weights) after finetuning.
 
 ### demo.ipynb & demo.py
-- jupyter notebook: select the environment that just import and run the cells in `demo.ipynb`
-- command line: simply run the `demo.py` typing `$ python demo.py` and it should do the work. (Figures are saved in `./fig/`)
+- Jupyter notebook: use, for example, VSCode with Jupyter extensions, and then select the environment (default: `demo`) that just creates. Click `Run All` to run the all cells in `demo.ipynb`
+- command line: activate the conad environment first: `$ conda activate demo` (default environment name is `demo`), and then simply run the `demo.py` typing `$ python demo.py` and it should do the work. (Figures are saved in `./fig/`)
