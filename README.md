@@ -35,4 +35,4 @@ While the `TunedModel.h5` in `./weights/` is the model (weights) after finetunin
 
 ### demo.ipynb & demo.py
 - Jupyter notebook: use, for example, VSCode with Jupyter extensions, and then select the environment (default: `demo`) that just creates. Click `Run All` to run the all cells in `demo.ipynb`
-- command line: activate the conad environment first: `$ conda activate demo` (default environment name is `demo`), and then simply run the `demo.py` typing `$ python demo.py` and it should do the work. (Figures are saved in `./fig/`)
+- command line: activate the conda environment first: `$ conda activate demo` (default environment name is `demo`), and then simply run the `demo.py` typing `$ python demo.py` and it should do the work. (Figures are saved in `./fig/`)
